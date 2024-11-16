@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Booking</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html">INFOCUS</a> </div>
+        <nav>
+            <ul>
+                
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="works.html">WORK</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <section class="booking-section">
+        <h2>Book Your Slot</h2>
+        <p class="booking-description">Choose your preferred date, time, and type of photography to book a session with us.</p>
+        <form class="booking-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Select Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Select Time</label>
+                <select id="time" name="time" required>
+                    <option value="">-- Select Time Slot --</option>
+                    <option value="10am-11am">10:00 AM - 11:00 AM</option>
+                    <option value="11am-12pm">11:00 AM - 12:00 PM</option>
+                    <option value="12pm-1pm">12:00 PM - 1:00 PM</option>
+                    <option value="2pm-3pm">2:00 PM - 3:00 PM</option>
+                    <option value="3pm-4pm">3:00 PM - 4:00 PM</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="photography">Type of Photography</label>
+                <select id="photography" name="photography" required>
+                    <option value="">-- Select Photography Type --</option>
+                    <option value="wedding">Wedding Photography</option>
+                    <option value="portrait">Portrait Photography</option>
+                    <option value="product">Product Photography</option>
+                    <option value="event">Event Photography</option>
+                    <option value="landscape">Landscape Photography</option>
+                </select>
+            </div>
+            <button type="submit" class="booking-btn">Book Now</button>
+        </form>
+    </section>
+</body>
+</html>
